@@ -8,13 +8,13 @@
     backdrop-filter: blur(4px);
     z-index: 1;
     display: flex;
-    justify-content: space-around;
-    padding: 0.4rem 0;
+    justify-content: space-between;
+    padding: 0.4rem;
 }
 .weatherInfor{
     font-family: monospace;
     font-weight:900;
-    font-size: 16px;
+    font-size: 20px;
 
     background-image: linear-gradient(225deg, #2626f3, #3af7fe);
 	background-clip: text;
@@ -24,7 +24,7 @@ width: max-content;
 }
 
 .logo{
-	font-size: 16px;
+	font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
