@@ -41,7 +41,7 @@ body{
     font-family:Arial, Helvetica, sans-serif;
 }
 h1{
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 .current-temp{
     align-items: flex-start;
