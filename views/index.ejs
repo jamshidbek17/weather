@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+    <%- include('partials/header.ejs') %>
+
+    <div class="container">
+`       <% if (locals.data){ %>
+        <div class="current-weather">
+
+            <div class="date">
+                <%= cityTime %>
+            </div>
+
+            <div class="city-name">
+                <h1> <%= data.name %>, <small><%= data.sys.country %></small></h1>
+                <p>lon: <%= data.coord.lon %>&deg;, lat: <%= data.coord.lat %>&deg;</p>
+
+           
+                
+            </div>
+            <div class="current-temp">
+                <%= Math.round(data.main.temp, 0) %>&deg;C
+                <div class="feels-like">
+                    Feels like <%= Math.round(data.main.feels_like, 0) %>&deg;C
+                </div>
+            </div>
+            <div class="current-icon">
+                <!-- <img src="http://openweathermap.org/img/wn/01d@2x.png" alt=""> -->
+                <img src=<%= `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png` %> alt="">
+                <div class="description">
+                    <%=  data.weather[0].description %>
+                </div>
+            </div>
+        
+        </div>
+   <% } else{ %>
+    <div class="error">
+         <div>City/Town not found. </div>
+        <div>Please recheck the loction.</div>
+        </div>
+    <% } %>
+    </div>
+
+
+
+</body>
+</html>
