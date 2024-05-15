@@ -12,6 +12,7 @@
     padding: 0.4rem;
 }
 .weatherInfor{
+	display: flex;
     font-family: monospace;
     font-weight:900;
     font-size: 20px;
@@ -51,8 +52,8 @@ form{
     justify-content: center;
     align-items: center;
     border-radius: 50rem;
-    padding: 0 1rem;
-    margin: 0.5rem 0;
+    padding: 0 0.4rem;
+    margin: 0.1rem 0;
     width: 25%;
 
 }
