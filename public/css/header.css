@@ -20,17 +20,17 @@
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	animation: hue 3s infinite linear;
-width: min-content
+width: max-content;
 }
 
 .logo{
-	font-size: 1px;
+	font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(44, 44, 44);
     border-radius: 10rem;
-    padding: 0 0.1rem;
+    padding: 0;
 width: min-content;
 }
 
