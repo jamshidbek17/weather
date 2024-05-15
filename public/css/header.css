@@ -30,6 +30,7 @@
     background-color: rgb(44, 44, 44);
     border-radius: 10rem;
     padding: 0 0.1rem;
+width: min-content;
 }
 
 @keyframes hue {
