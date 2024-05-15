@@ -14,7 +14,7 @@
 .weatherInfor{
     font-family: monospace;
     font-weight:900;
-    font-size: 1em;
+    font-size: 0.5em;
 
     background-image: linear-gradient(225deg, #2626f3, #3af7fe);
 	background-clip: text;
